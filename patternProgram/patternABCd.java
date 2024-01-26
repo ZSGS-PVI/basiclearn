@@ -1,0 +1,29 @@
+package patternProgram;
+
+import java.util.Scanner;
+
+public class patternABCd {
+	static void pattern(int rows) {
+		
+		for(int i=1;i<=rows;i++) {
+			for(int s=1;s<=rows-i;s++) {
+				System.out.print(" ");
+			}
+			char ch='A';
+			for(int j=1;j<=i;j++) {
+				System.out.print(ch+" ");
+				ch++;
+			}
+			System.out.println();
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter the rows:");
+		int rows=in.nextInt();
+		pattern(rows);
+		
+		
+	}
+}
